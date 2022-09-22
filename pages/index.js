@@ -33,7 +33,7 @@ export default function Home() {
 					</div>
 					<div className='border'>
 						<img
-							className='w-full h-60 object-cove hover:opacity-80 transition duration-100'
+							className='w-full h-60 object-cover hover:opacity-80 transition duration-100'
 							src='/Bonny1.webp'
 							alt='Bonny Wilson'
 						/>
@@ -76,24 +76,27 @@ export default function Home() {
 					<h2 className='text-4xl p-4 '>Contact Us</h2>
 					<form className='w-80'>
 						<div className='flex flex-col'>
-							<label htmlFor=''>Full Name</label>
+							<label htmlFor='fullname'>Full Name</label>
 							<input
+								id='fullname'
 								className='w-full outline-0 p-2 text-slate-700'
 								type='text'
 							/>
 						</div>
 						<div className='p-2'></div>
 						<div className='flex flex-col'>
-							<label htmlFor=''>Email Adress</label>
+							<label htmlFor='email'>Email Adress</label>
 							<input
+								id='email'
 								className='w-full outline-0 p-2 text-slate-700'
 								type='text'
 							/>
 						</div>
 						<div className='p-2'></div>
 						<div className='flex flex-col'>
-							<label htmlFor=''>Message</label>
+							<label htmlFor='message'>Message</label>
 							<textarea
+								id='message'
 								className='w-full outline-0 p-2 text-slate-700'
 								type='text'
 							/>
@@ -122,6 +125,7 @@ export default function Home() {
 						<iframe
 							className='absolute top-0 bottom-0 left-0 right-0 w-full h-full'
 							id='gmap_canvas'
+							title='GoogleMaps'
 							src='https://maps.google.com/maps?q=W2VW+6Q%20Alexander%20City,%20Alabama,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed'
 							frameborder='0'
 							scrolling='no'

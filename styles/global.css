@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.table,
+	.table tr,
+	.table td {
+		@apply border;
+	}
+
+	.table td,
+	.table th {
+		@apply p-2;
+	}
+
+	.table th {
+		@apply bg-black text-white w-1/3;
+	}
+}

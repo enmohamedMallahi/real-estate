@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import Header from '../components/Header';
+import Testimonials from '../components/Testimonials';
 import { data } from '../data';
 
 export default function Home() {
@@ -65,78 +66,7 @@ export default function Home() {
 			<section className='w-10/12 my-6 mx-auto'>
 				<h2 className='text-3xl font-bold text-center'>WHAT PEOPLE SAY</h2>
 				<div className='py-3'></div>
-				<div className='grid md:grid-cols-3 gap-4'>
-					<div className='border p-4 rounded-md bg-black text-white'>
-						<h3 className='text-3xl  font-bold mb-3'>Jeff</h3>
-						<p className='text-lg'>
-							"I decided to invest in rental property. I contacted Bonny Wilson
-							at East Dale Realty and explained to her what I was looking for.
-							Bonny worked tirelessly to find two properties that suited my
-							needs. Now she manages the properties making sure my renters and
-							rentals are taken care of. Bonny handles business in a
-							professional manner, taking a huge burden off me. This has proven
-							to be one of the best business decisions I have ever made. If your
-							are looking for a realtor that will take care of you….look no
-							further. Bonny is the one you need."
-						</p>
-					</div>
-					<div className='border p-4 rounded-md bg-black text-white'>
-						<h3 className='text-3xl font-bold mb-3'>Jerri</h3>
-						<p className='text-lg'>
-							"I decided to invest in rental property. I contacted Bonny Wilson
-							at East Dale Realty and explained to her what I was looking for.
-							Bonny worked tirelessly to find two properties that suited my
-							needs. Now she manages the properties making sure my renters and
-							rentals are taken care of. Bonny handles business in a
-							professional manner, taking a huge burden off me. This has proven
-							to be one of the best business decisions I have ever made. If your
-							are looking for a realtor that will take care of you….look no
-							further. Bonny is the one you need."
-						</p>
-					</div>
-					<div className='border p-4 rounded-md bg-black text-white'>
-						<h3 className='text-3xl font-bold mb-3'>Angie and Tim</h3>
-						<p className='text-lg'>
-							"I decided to invest in rental property. I contacted Bonny Wilson
-							at East Dale Realty and explained to her what I was looking for.
-							Bonny worked tirelessly to find two properties that suited my
-							needs. Now she manages the properties making sure my renters and
-							rentals are taken care of. Bonny handles business in a
-							professional manner, taking a huge burden off me. This has proven
-							to be one of the best business decisions I have ever made. If your
-							are looking for a realtor that will take care of you….look no
-							further. Bonny is the one you need."
-						</p>
-					</div>
-					<div className='border p-4 rounded-md bg-black text-white'>
-						<h3 className='text-3xl font-bold mb-3'>Jennifer</h3>
-						<p className='text-lg'>
-							"I decided to invest in rental property. I contacted Bonny Wilson
-							at East Dale Realty and explained to her what I was looking for.
-							Bonny worked tirelessly to find two properties that suited my
-							needs. Now she manages the properties making sure my renters and
-							rentals are taken care of. Bonny handles business in a
-							professional manner, taking a huge burden off me. This has proven
-							to be one of the best business decisions I have ever made. If your
-							are looking for a realtor that will take care of you….look no
-							further. Bonny is the one you need."
-						</p>
-					</div>
-					<div className='border p-4 rounded-md bg-black text-white'>
-						<h3 className='text-3xl font-bold mb-3'>Justin and Tabitha</h3>
-						<p className='text-lg'>
-							"I decided to invest in rental property. I contacted Bonny Wilson
-							at East Dale Realty and explained to her what I was looking for.
-							Bonny worked tirelessly to find two properties that suited my
-							needs. Now she manages the properties making sure my renters and
-							rentals are taken care of. Bonny handles business in a
-							professional manner, taking a huge burden off me. This has proven
-							to be one of the best business decisions I have ever made. If your
-							are looking for a realtor that will take care of you….look no
-							further. Bonny is the one you need."
-						</p>
-					</div>
-				</div>
+				<Testimonials />
 			</section>
 			{/* Contact Us */}
 			<section id='contact' className='md:flex'>
@@ -186,18 +116,22 @@ export default function Home() {
 					</ul>
 					<div className='p-2'></div>
 
-					<iframe
-						width={500}
-						height={360}
-						id='gmap_canvas'
-						src='https://maps.google.com/maps?q=W2VW+6Q%20Alexander%20City,%20Alabama,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed'
-						frameborder='0'
-						scrolling='no'
-						marginheight='0'
-						marginwidth='0'
-					></iframe>
+					<div className='relative w-3/4 overflow-hidden aspect-video'>
+						<iframe
+							className='absolute top-0 bottom-0 left-0 right-0 w-full h-full'
+							id='gmap_canvas'
+							src='https://maps.google.com/maps?q=W2VW+6Q%20Alexander%20City,%20Alabama,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed'
+							frameborder='0'
+							scrolling='no'
+							marginheight='0'
+							marginwidth='0'
+						></iframe>
+					</div>
 				</div>
 			</section>
+			<footer className='text-center py-6 font-bold'>
+				<p>&copy; All rights reserved to EastDaleReality.</p>
+			</footer>
 		</>
 	);
 }

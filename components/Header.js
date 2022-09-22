@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
 	return (
 		<header className='border-t'>
-			<div className='w-10/12  h-96 py-4 mx-auto flex flex-col gap-4 md:flex-row items-center'>
+			<div className='w-10/12 py-4 mx-auto flex flex-col gap-4 md:flex-row items-center'>
 				<div>
 					<h1 className='text-5xl font-bold'>
 						Buying, Selling, Rentals, Property Management

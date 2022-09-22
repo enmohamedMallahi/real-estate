@@ -1,0 +1,72 @@
+<div className='grid md:grid-cols-3 gap-4'>
+					<div className='border p-4 rounded-md bg-black text-white'>
+						<h3 className='text-3xl  font-bold mb-3'>Jeff</h3>
+						<p className='text-lg'>
+							"I decided to invest in rental property. I contacted Bonny Wilson
+							at East Dale Realty and explained to her what I was looking for.
+							Bonny worked tirelessly to find two properties that suited my
+							needs. Now she manages the properties making sure my renters and
+							rentals are taken care of. Bonny handles business in a
+							professional manner, taking a huge burden off me. This has proven
+							to be one of the best business decisions I have ever made. If your
+							are looking for a realtor that will take care of you….look no
+							further. Bonny is the one you need."
+						</p>
+					</div>
+					<div className='border p-4 rounded-md bg-black text-white'>
+						<h3 className='text-3xl font-bold mb-3'>Jerri</h3>
+						<p className='text-lg'>
+							"I decided to invest in rental property. I contacted Bonny Wilson
+							at East Dale Realty and explained to her what I was looking for.
+							Bonny worked tirelessly to find two properties that suited my
+							needs. Now she manages the properties making sure my renters and
+							rentals are taken care of. Bonny handles business in a
+							professional manner, taking a huge burden off me. This has proven
+							to be one of the best business decisions I have ever made. If your
+							are looking for a realtor that will take care of you….look no
+							further. Bonny is the one you need."
+						</p>
+					</div>
+					<div className='border p-4 rounded-md bg-black text-white'>
+						<h3 className='text-3xl font-bold mb-3'>Angie and Tim</h3>
+						<p className='text-lg'>
+							"I decided to invest in rental property. I contacted Bonny Wilson
+							at East Dale Realty and explained to her what I was looking for.
+							Bonny worked tirelessly to find two properties that suited my
+							needs. Now she manages the properties making sure my renters and
+							rentals are taken care of. Bonny handles business in a
+							professional manner, taking a huge burden off me. This has proven
+							to be one of the best business decisions I have ever made. If your
+							are looking for a realtor that will take care of you….look no
+							further. Bonny is the one you need."
+						</p>
+					</div>
+					<div className='border p-4 rounded-md bg-black text-white'>
+						<h3 className='text-3xl font-bold mb-3'>Jennifer</h3>
+						<p className='text-lg'>
+							"I decided to invest in rental property. I contacted Bonny Wilson
+							at East Dale Realty and explained to her what I was looking for.
+							Bonny worked tirelessly to find two properties that suited my
+							needs. Now she manages the properties making sure my renters and
+							rentals are taken care of. Bonny handles business in a
+							professional manner, taking a huge burden off me. This has proven
+							to be one of the best business decisions I have ever made. If your
+							are looking for a realtor that will take care of you….look no
+							further. Bonny is the one you need."
+						</p>
+					</div>
+					<div className='border p-4 rounded-md bg-black text-white'>
+						<h3 className='text-3xl font-bold mb-3'>Justin and Tabitha</h3>
+						<p className='text-lg'>
+							"I decided to invest in rental property. I contacted Bonny Wilson
+							at East Dale Realty and explained to her what I was looking for.
+							Bonny worked tirelessly to find two properties that suited my
+							needs. Now she manages the properties making sure my renters and
+							rentals are taken care of. Bonny handles business in a
+							professional manner, taking a huge burden off me. This has proven
+							to be one of the best business decisions I have ever made. If your
+							are looking for a realtor that will take care of you….look no
+							further. Bonny is the one you need."
+						</p>
+					</div>
+				</div>

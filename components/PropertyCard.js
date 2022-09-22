@@ -13,7 +13,7 @@ const PropertyCard = ({ property }) => {
 				<img
 					className='w-full md:w-1/3 hover:opacity-80 transition duration-100'
 					src={property.image}
-					alt=''
+					alt={property.address}
 				/>
 				{/* Details */}
 				<div className='p-4'>

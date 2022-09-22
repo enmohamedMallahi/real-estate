@@ -22,6 +22,7 @@ export default function Home() {
 						<img
 							className='w-full h-60 object-cover hover:opacity-80 transition duration-100'
 							src='/IMG_3450.webp'
+							alt='Lee McWaters'
 						/>
 						<ul className='p-4'>
 							<li className='font-bold text-xl'>Lee McWaters</li>
@@ -34,6 +35,7 @@ export default function Home() {
 						<img
 							className='w-full h-60 object-cove hover:opacity-80 transition duration-100'
 							src='/Bonny1.webp'
+							alt='Bonny Wilson'
 						/>
 						<ul>
 							<li className='font-bold text-xl'>Bonny Wilson</li>
@@ -53,7 +55,7 @@ export default function Home() {
 							<img
 								className='w-full hover:opacity-80 transition duration-100'
 								src={prop.image}
-								alt=''
+								alt={prop.address}
 							/>
 							<div className='h-14 font-bold  p-2 overflow-hidden text-ellipsis inline-block '>
 								{prop.address}

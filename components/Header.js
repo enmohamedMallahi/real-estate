@@ -21,7 +21,7 @@ const Header = () => {
 					</a>
 				</div>
 				<div>
-					<img className='w-full block' src='/bg.jpg' alt='' />
+					<img className='w-full block' src='/bg.jpg' alt='EastDaleRealty' />
 					<div className='w-full h-full bg-black'></div>
 				</div>
 			</div>

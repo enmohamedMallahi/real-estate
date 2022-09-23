@@ -12,6 +12,9 @@ function MyApp({ Component, pageProps }) {
 			<main>
 				<Component {...pageProps} />
 			</main>
+			<footer className='text-center py-6 font-bold'>
+				<p>&copy; All rights reserved to EastDaleReality.</p>
+			</footer>
 		</>
 	);
 }

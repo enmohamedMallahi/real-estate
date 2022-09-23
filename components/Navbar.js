@@ -11,7 +11,7 @@ const Navbar = () => {
 						EastDaleReality
 					</a>
 				</Link>
-				<ul className='flex gap-4'>
+				<ul className='flex gap-4 text-sm'>
 					<li>
 						<Link href='/properties'>
 							<a className='hover:underline transition duration-100'>
@@ -25,9 +25,11 @@ const Navbar = () => {
 						</a>
 					</li>
 					<li>
-						<a className='hover:underline transition duration-100' href='#'>
-							Contact
-						</a>
+						<Link href='/contact'>
+							<a className='hover:underline transition duration-100'>
+								Contact
+							</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

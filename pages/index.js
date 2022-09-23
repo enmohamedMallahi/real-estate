@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { createClient } from 'contentful';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -6,10 +6,9 @@ import Header from '../components/Header';
 import Testimonials from '../components/Testimonials';
 import { data } from '../data';
 
-export default function Home() {
-	console.log(data);
-	const [props, setProps] = useState([...data]);
-
+export default function Home({ properties }) {
+	console.log(properties);
+	// const [props, setProps] = useState([...data]);
 	return (
 		<>
 			<Header />
@@ -37,7 +36,7 @@ export default function Home() {
 							src='/Bonny1.webp'
 							alt='Bonny Wilson'
 						/>
-						<ul>
+						<ul className='p-4'>
 							<li className='font-bold text-xl'>Bonny Wilson</li>
 							<li> Broker/Owner ABR, SRS, MRP</li>
 							<li>256-749-8772</li>
@@ -50,15 +49,18 @@ export default function Home() {
 			<section className='w-10/12 my-8 mx-auto text-center'>
 				<h2 className='text-3xl font-bold py-4'>Properties For Sale</h2>
 				<div className='grid md:grid-cols-3 gap-4'>
-					{props.map((prop) => (
-						<div className='relative border border-black rounded'>
+					{properties.map((property) => (
+						<div
+							key={property.sys.id}
+							className='relative border shadow-md rounded'
+						>
 							<img
 								className='w-full hover:opacity-80 transition duration-100'
-								src={prop.image}
-								alt={prop.address}
+								src={'https:' + property.fields.image.fields.file.url}
+								alt={property.i}
 							/>
-							<div className='h-14 font-bold  p-2 overflow-hidden text-ellipsis inline-block '>
-								{prop.address}
+							<div className='h-10 font-bold p-2 overflow-hidden text-ellipsis inline-block '>
+								{property.fields.address}
 							</div>
 						</div>
 					))}
@@ -127,17 +129,29 @@ export default function Home() {
 							id='gmap_canvas'
 							title='GoogleMaps'
 							src='https://maps.google.com/maps?q=W2VW+6Q%20Alexander%20City,%20Alabama,%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed'
-							frameborder='0'
+							frameBorder='0'
 							scrolling='no'
-							marginheight='0'
-							marginwidth='0'
+							marginHeight='0'
+							marginWidth='0'
 						></iframe>
 					</div>
 				</div>
 			</section>
-			<footer className='text-center py-6 font-bold'>
-				<p>&copy; All rights reserved to EastDaleReality.</p>
-			</footer>
+			
 		</>
 	);
 }
+
+export const getStaticProps = async () => {
+	const client = createClient({
+		space: process.env.CONTENTFUL_SPACE_ID,
+		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+	});
+	const res = await client.getEntries({ content_type: 'property' });
+	console.log(res.items);
+	return {
+		props: {
+			properties: res.items,
+		},
+	};
+};

@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
 				<title>EastDaleReality</title>
 			</Head>
 			<Navbar />
-			<main>
-				<Component {...pageProps} />
-			</main>
+
+			<Component {...pageProps} />
+
 			<footer className='text-center py-6 font-bold'>
 				<p>&copy; All rights reserved to EastDaleReality.</p>
 			</footer>

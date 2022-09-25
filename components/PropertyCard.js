@@ -4,10 +4,10 @@ const PropertyCard = ({ property }) => {
 	const { address, bedrooms, bathrooms, details, price } = property.fields;
 
 	return (
-		<article className='relative border'>
+		<article className='relative border rounded-md'>
 			{/* Header */}
 			<header className='p-3 bg-black text-white text-center'>
-				<h2 className=' '>{property.fields.address}</h2>
+				<h2 className=''>{property.fields.address}</h2>
 			</header>
 			{/* Body */}
 			<div className='flex flex-col md:flex-row'>
@@ -61,7 +61,7 @@ const PropertyCard = ({ property }) => {
 							{property.fields.price} $
 						</a>
 						<Link href={`/property/${property.sys.id}`}>
-							<a className='py-3 px-4 border-2 font-bold rounded-md inline-block hover:bg-black hover:text-white transition duration-100'>
+							<a className='ml-2 py-3 px-4 border-2 font-bold rounded-md inline-block hover:bg-black hover:text-white transition duration-100'>
 								See Full Details
 							</a>
 						</Link>

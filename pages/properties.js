@@ -11,8 +11,8 @@ export default function Properties({ properties }) {
 	return (
 		<>
 			{/* Properties For Sale */}
-			<section className='w-10/12 my-8 mx-auto '>
-				<h2 className='text-3xl h-14 font-bold my-4 text-center'>
+			<section className='max-w-4xl mx-auto p-4 my-8'>
+				<h2 className='text-3xl h-14 font-bold text-center'>
 					Properties For Sale
 				</h2>
 				<div className='grid gap-3'>

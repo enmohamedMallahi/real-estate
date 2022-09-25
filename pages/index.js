@@ -82,7 +82,7 @@ export default function Home({ properties }) {
 								<label htmlFor='fullname'>Full Name</label>
 								<input
 									id='fullname'
-									className='w-full outline-0 p-2 text-slate-700'
+									className='w-full rounded-md outline-0 p-2 text-slate-700'
 									type='text'
 								/>
 							</div>
@@ -91,7 +91,7 @@ export default function Home({ properties }) {
 								<label htmlFor='email'>Email Adress</label>
 								<input
 									id='email'
-									className='w-full outline-0 p-2 text-slate-700'
+									className='w-full rounded-md outline-0 p-2 text-slate-700'
 									type='text'
 								/>
 							</div>
@@ -100,7 +100,7 @@ export default function Home({ properties }) {
 								<label htmlFor='message'>Message</label>
 								<textarea
 									id='message'
-									className='w-full outline-0 p-2 text-slate-700'
+									className='w-full rounded-md outline-0 p-2 text-slate-700'
 									type='text'
 								/>
 							</div>

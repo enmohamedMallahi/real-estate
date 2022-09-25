@@ -17,12 +17,12 @@ export default function Property({ property }) {
 	return (
 		<>
 			{/* Properties For Sale */}
-			<section className='w-10/12 my-8 mx-auto '>
+			<section className='max-w-4xl mx-auto p-4 my-8'>
 				<div className='flex flex-col md:flex-row gap-8'>
 					<div className='md:w-1/3'>
 						{/* <h3 className='text-2xl my-2 font-bold'>More Details</h3> */}
 						<img
-							className='w-full'
+							className='w-full rounded-md'
 							src={'https:' + property.fields.image.fields.file.url}
 							alt=''
 						/>

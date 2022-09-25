@@ -77,7 +77,7 @@ export default function Home({ properties }) {
 				<section id='contact' className='md:flex'>
 					<div className='flex-grow flex flex-col justify-center items-center py-8 bg-black text-white'>
 						<h2 className='text-4xl p-4 '>Contact Us</h2>
-						<form className='w-80'>
+						<form className='sm:w-80'>
 							<div className='flex flex-col'>
 								<label htmlFor='fullname'>Full Name</label>
 								<input
@@ -105,7 +105,7 @@ export default function Home({ properties }) {
 								/>
 							</div>
 							<div className='p-2'></div>
-							<button className='px-3 py-2 bg-green-400 rounded border-0 hover:opacity-80 transition duration-100	'>
+							<button className='px-3 py-2 bg-orange-400 rounded border-0 hover:opacity-80 transition duration-100	'>
 								Send It
 							</button>
 						</form>

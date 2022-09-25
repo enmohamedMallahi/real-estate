@@ -11,10 +11,9 @@ export default function Properties({ properties }) {
 	return (
 		<>
 			{/* Properties For Sale */}
-			<section className='max-w-4xl mx-auto p-4 my-8'>
-				<h2 className='text-3xl h-14 font-bold text-center'>
-					Properties For Sale
-				</h2>
+			<section className='max-w-4xl mx-auto p-4'>
+				<h2 className='text-3xl font-bold text-center'>Properties For Sale</h2>
+				<div className='p-2'></div>
 				<div className='grid gap-3'>
 					{properties.map((property) => (
 						<PropertyCard key={property.address} property={property} />

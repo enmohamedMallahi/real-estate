@@ -17,7 +17,7 @@ export default function Property({ property }) {
 	return (
 		<>
 			{/* Properties For Sale */}
-			<section className='max-w-4xl mx-auto p-4 my-8'>
+			<section className='max-w-4xl mx-auto p-4'>
 				<div className='flex flex-col md:flex-row gap-8'>
 					<div className='md:w-1/3'>
 						{/* <h3 className='text-2xl my-2 font-bold'>More Details</h3> */}

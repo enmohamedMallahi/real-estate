@@ -23,7 +23,7 @@ const Header = () => {
 				<div>
 					<img
 						className='w-full block rounded-md'
-						src='/bg.jpg'
+						src='/imgs/bg.jpg'
 						alt='EastDaleRealty'
 					/>
 					<div className='w-full h-full bg-black'></div>

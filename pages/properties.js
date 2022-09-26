@@ -1,8 +1,7 @@
-import { createClient } from 'contentful';
 import Head from 'next/head';
 import Image from 'next/image';
+import client from '../config/contentful';
 import PropertyCard from '../components/PropertyCard';
-// import { data } from '../data';
 
 export default function Properties({ properties }) {
 	// console.log(data);
@@ -25,10 +24,6 @@ export default function Properties({ properties }) {
 }
 
 export const getStaticProps = async () => {
-	const client = createClient({
-		space: process.env.CONTENTFUL_SPACE_ID,
-		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-	});
 	const res = await client.getEntries({ content_type: 'property' });
 	console.log(res.items);
 	return {

@@ -13,7 +13,7 @@ const Navbar = () => {
 				</Link>
 				<button
 					id='mobile-open-button'
-					class='text-3xl sm:hidden focus:outline-none'
+					className='text-3xl sm:hidden focus:outline-none'
 				>
 					&#9776;
 				</button>

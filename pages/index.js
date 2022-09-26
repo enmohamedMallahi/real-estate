@@ -1,14 +1,11 @@
-import { createClient } from 'contentful';
 import Head from 'next/head';
 import Image from 'next/image';
 
 import Header from '../components/Header';
 import Testimonials from '../components/Testimonials';
-import { data } from '../data';
+import client from '../config/contentful';
 
 export default function Home({ properties }) {
-	console.log(properties);
-	// const [props, setProps] = useState([...data]);
 	return (
 		<>
 			<Header />
@@ -21,7 +18,7 @@ export default function Home({ properties }) {
 						<div className='border'>
 							<img
 								className='w-full md:h-60 object-cover hover:opacity-80 transition duration-100'
-								src='/IMG_3450.webp'
+								src='/imgs/LeeMc.webp'
 								alt='Lee McWaters'
 							/>
 							<ul className='p-4'>
@@ -34,7 +31,7 @@ export default function Home({ properties }) {
 						<div className='border'>
 							<img
 								className='w-full md:h-60 object-cover hover:opacity-80 transition duration-100'
-								src='/Bonny1.webp'
+								src='/imgs/Bonny.webp'
 								alt='Bonny Wilson'
 							/>
 							<ul className='p-4'>
@@ -144,10 +141,6 @@ export default function Home({ properties }) {
 }
 
 export const getStaticProps = async () => {
-	const client = createClient({
-		space: process.env.CONTENTFUL_SPACE_ID,
-		accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-	});
 	const res = await client.getEntries({ content_type: 'property' });
 	console.log(res.items);
 	return {
